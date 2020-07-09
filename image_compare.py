@@ -1,8 +1,10 @@
+#code retrieved from: https://pysource.com/2018/07/20/detect-how-similar-two-images-are-with-opencv-and-python/
 from cv2 import cv2
 import numpy as np
-#code retrieved from: https://pysource.com/2018/07/20/detect-how-similar-two-images-are-with-opencv-and-python/
-original = cv2.imread(r'C:\Users\hp\Pictures\spot3.jpg')
-image_to_compare = cv2.imread(r'C:\Users\hp\Pictures\spot4.jpg') 
+Path = r"C:\Users\hp\Pictures\Images/"
+original = cv2.imread(Path + 'spot3.jpg')
+image_to_compare = cv2.imread(Path + 'spot4.jpg') 
+ 
 
 # 1) Check if 2 images are equals
 if original.shape == image_to_compare.shape:
